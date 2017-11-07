@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Data Visualisation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Quicksand" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg">
+	  <a class="navbar-brand">Data Visualisation</a>
+	  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <i class="fa fa-bars"></i>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarContent">
+	    <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0">
+	      <li class="nav-item">
+	        <a class="nav-link active" href="#">Online Shopping</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Git Commits</a>
+	      </li>
+	    </ul>
+	  </div>-->
+	</nav>
+
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<h1>Online Shopping in Singapore by Age</h1>
+			<p>This is a multi-line chart which shows the percentage of online shoppers in Singapore within each age group over the years 2007 to 2014. Done for <a href="http://www.comp.nus.edu.sg/" class="link">CS3240 Interaction Design</a>.</p>
+			<div id="shoppersChart"></div>
+			<h2><a href="online-shoppers-by-age-group.csv" class="link">CSV data extracted from data.gov.sg</a></h2>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<h1>Frequency of Git Commits over 52 Weeks</h1>
+			<p>This heatmap shows the frequency of git commits by day for a certain user. Done for <a href="http://www.comp.nus.edu.sg/" class="link">CS3240 Interaction Design</a><p>
+			<div id="gitChart"></div>
+			<h2><a href="git-commit-frequency.json" class="link">JSON data extracted from github API</a></h2>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="shoppersChart.js"></script>
+	<script src="gitChart.js"></script>
+	<link href="style.css" rel="stylesheet">
+</body>
+</html>
